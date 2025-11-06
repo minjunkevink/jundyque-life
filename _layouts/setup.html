@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<style>
+  .setup-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .setup-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .setup-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .tech-stack {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tech-category {
+    margin-bottom: 40px;
+  }
+
+  .tech-category h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .tech-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tech-item {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .tech-item:last-child {
+    border-bottom: none;
+  }
+
+  .tech-item-name {
+    font-weight: 500;
+    color: #222;
+  }
+
+  .tech-item-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .setup-container {
+      padding: 20px 15px;
+    }
+
+    .setup-title {
+      font-size: 2rem;
+    }
+
+    .tech-category h2 {
+      font-size: 1.3rem;
+    }
+  }
+</style>
+
+<div class="setup-container">
+  <div class="setup-header">
+    <h1 class="setup-title">{{ page.title }}</h1>
+  </div>
+
+  <div class="tech-stack">
+    <div class="tech-category">
+      <h2>Hardware</h2>
+      <ul class="tech-items">
+        <li class="tech-item">
+          <span class="tech-item-name">MacBook Pro</span>
+          <div class="tech-item-description">16-inch, M1 Pro</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Monitor</span>
+          <div class="tech-item-description">LG UltraFine 4K</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Keyboard</span>
+          <div class="tech-item-description">Keychron K2</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Mouse</span>
+          <div class="tech-item-description">Logitech MX Master 3</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tech-category">
+      <h2>Software</h2>
+      <ul class="tech-items">
+        <li class="tech-item">
+          <span class="tech-item-name">Editor</span>
+          <div class="tech-item-description">VS Code / Cursor</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Terminal</span>
+          <div class="tech-item-description">iTerm2 with zsh</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Browser</span>
+          <div class="tech-item-description">Chrome / Firefox</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Version Control</span>
+          <div class="tech-item-description">Git</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tech-category">
+      <h2>Development</h2>
+      <ul class="tech-items">
+        <li class="tech-item">
+          <span class="tech-item-name">Languages</span>
+          <div class="tech-item-description">Python, JavaScript, TypeScript, Go</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Frameworks</span>
+          <div class="tech-item-description">React, Next.js, FastAPI</div>
+        </li>
+        <li class="tech-item">
+          <span class="tech-item-name">Tools</span>
+          <div class="tech-item-description">Docker, Kubernetes, AWS</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,60 @@
+# Site settings
+title: "jundyque.life"  # Change to your site's title
+email: ""  # Add your email
+description: >-
+  Welcome to my Blog
+# GitHub Pages settings
+baseurl: "" # Leave empty for GitHub Pages (your username.github.io site)
+url: "https://jundyque.life" # Your domain URL
+
+# Social media (optional)
+github_username: ""  # Add your GitHub username
+
+# Build settings
+theme: jekyll-theme-minimal 
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag  # Helps with SEO, optional but recommended
+
+# Enable Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+
+# Collections configuration
+collections:
+  markdown:
+    output: true
+    permalink: /:title/
+
+# Default front matter settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_markdown"
+    values:
+      layout: "page"
+      
+# Permalink structure for posts
+permalink: /blog/:year/:month/:day/:title/
+      
+include:
+  - "_markdown"
+  - "_posts"
+
+# Exclude unnecessary files from build
+exclude:
+  - _site/
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+

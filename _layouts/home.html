@@ -1,0 +1,154 @@
+---
+layout: default
+title: "Home"
+---
+
+<div class="container">
+    <p class="name">Kevin Kim 김민준</p>
+    <div class="sections">
+        <a href="/blog/" class="section-link">essay</a>
+        <span class="section-separator">|</span>
+        <a href="/setup/" class="section-link">setup</a>
+        <span class="section-separator">|</span>
+        <a href="/hobbies/" class="section-link">hobbies</a>
+    </div>
+</div>
+
+<div class="intro">
+    {{content}}
+</div>
+
+<img src="{{ '/assets/images/golf.jpg' | relative_url }}" alt="Kevin Kim" class="home-image">
+
+<style>
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 90%; /* Circle crop */
+      object-fit: cover;
+      border: 1px solid #333;
+  }
+
+  .home-image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 40px auto 0;
+      display: block;
+      border-radius: 4px;
+  }
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 0px; /* Reduce space below the name */
+  color: #000000;
+}
+
+.email {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.8rem; /* Reduce text size */
+  font-weight: 400;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center; /* Centers inline-block text */
+  margin-bottom:0px
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin: 4px;
+  vertical-align: middle;
+  margin-top:4px
+}
+
+.links {
+  margin-top: 0px; /* Reduce space between name and icons */
+  display: flex;
+  gap: 0px; /* Adjust spacing between icons */
+  align-items: center;
+  margin-bottom: 1px
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 0px;
+}
+
+.section-link {
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    color: #000000 !important; /* Plain black text */
+    font-weight: 300 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    transition: color 0.3s ease;
+    margin: 0 !important;
+    display: inline !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.section-link:hover,
+.section-link:focus {
+    color: #005bb5 !important; /* Blue color on hover */
+    text-decoration: underline !important; /* Underline on hover */
+    font-weight: 300 !important; /* Keep normal weight, don't make bold */
+}
+
+.section-separator {
+    color: #000000;
+    margin: 0 6px;
+    font-weight: 300;
+}
+
+.links a {
+  color: #0073e6; /* Change this to your desired color */
+  text-decoration: none; /* Optional: Removes underline */
+}
+
+.links a:hover {
+  color: #005bb5; /* Optional: Darker shade on hover */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensures vertical centering if needed */
+    text-align: left;
+    width: 50%;
+    margin: 0 auto; /* Centers horizontally */
+    margin-top: 10px;
+}
+
+/* Add responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 90%; /* Wider width on mobile devices */
+    }
+}
+
+.intro h1, .intro h2, .intro h3, .intro h4, .intro h5, .intro h6 {
+    text-align: left;
+    width: 100%; /* Ensures they span full width within the .intro block */
+}
+</style>
+
