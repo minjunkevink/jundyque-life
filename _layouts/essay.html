@@ -7,26 +7,28 @@ custom_tags:
   - learning
 ---
 
-<div class="blog-container">
-  <div class="blog-header">
-    <p class="blog-description">all opinions are my own</p>
+<div class="essay-container">
+  <div class="essay-header">
+    <h1 class="essay-title">📝</h1>
+    <p class="essay-description">all opinions are my own</p>
   </div>
 
-  <div class="blog-filters">
+  <div class="essay-filters">
     <div class="tag-filter">
-      <span>Filter by: </span>
       <div class="tags">
-        <button class="tag-button active" data-tag="all">All</button>
+        <button class="tag-button active" data-tag="all">all</button>
         {% for tag in layout.custom_tags %}
+          <span class="tag-separator">|</span>
           <button class="tag-button" data-tag="{{ tag }}">{{ tag }}</button>
         {% endfor %}
       </div>
     </div>
   </div>
 
-  <div class="blog-posts">
+  <div class="essay-posts">
     {% for post in site.posts %}
-    <div class="post-card" data-tags="{% for tag in post.tags %}{{ tag }} {% endfor %}">
+      {% unless post.tags contains 'shower-thoughts' %}
+      <div class="post-card" data-tags="{% for tag in post.tags %}{{ tag }} {% endfor %}">
       {% if post.featured_image %}
       <div class="post-image">
         <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
@@ -41,11 +43,13 @@ custom_tags:
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         <div class="post-tags">
           {% for tag in post.tags %}
-          <span class="tag">{{ tag }}</span>
+            {% unless forloop.first %}<span class="tag-separator">|</span>{% endunless %}
+            <span class="tag">{{ tag }}</span>
           {% endfor %}
         </div>
       </div>
     </div>
+      {% endunless %}
     {% endfor %}
   </div>
 
@@ -94,31 +98,31 @@ custom_tags:
 </script>
 
 <style>
-  .blog-container {
+  .essay-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  .blog-header {
+  .essay-header {
     text-align: center;
     margin-bottom: 40px;
   }
 
-  .blog-title {
+  .essay-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
   }
 
-  .blog-description {
+  .essay-description {
     color: #666;
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
   }
 
-  .blog-filters {
+  .essay-filters {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -131,43 +135,61 @@ custom_tags:
   .tag-filter {
     margin-bottom: 20px;
     width: 100%;
-  }
-
-  .tag-filter span {
-    display: inline-block;
-    margin-right: 10px;
-    font-weight: bold;
-    color: #555;
+    display: flex;
+    justify-content: center;
   }
 
   .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 8px;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .tag-separator {
+    color: #000000;
+    margin: 0 6px;
+    font-weight: 300;
   }
 
   .tag-button {
-    padding: 6px 12px;
-    background: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    transition: color 0.3s ease;
+    margin: 0 !important;
+    display: inline !important;
+    outline: none !important;
     cursor: pointer;
-    transition: all 0.2s;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
   }
 
-  .tag-button:hover {
-    background: #e0e0e0;
+  .tag-button:hover,
+  .tag-button:focus {
+    color: #005bb5 !important;
+    text-decoration: underline !important;
+    font-weight: 300 !important;
+    background: #ffffff !important;
   }
 
   .tag-button.active {
-    background: #267CB9;
-    color: white;
-    border-color: #267CB9;
+    color: #005bb5 !important;
+    text-decoration: underline !important;
+    font-weight: 300 !important;
+    background: #ffffff !important;
   }
 
-  .blog-posts {
+  .essay-posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 25px;
@@ -246,15 +268,23 @@ custom_tags:
   .post-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 0;
+    align-items: center;
   }
 
   .tag {
-    padding: 4px 10px;
-    background: #f5f5f5;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    color: #666;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    display: inline !important;
   }
 
   .no-results {
@@ -266,11 +296,11 @@ custom_tags:
   }
 
   @media (max-width: 768px) {
-    .blog-posts {
+    .essay-posts {
       grid-template-columns: 1fr;
     }
     
-    .blog-filters {
+    .essay-filters {
       flex-direction: column;
       align-items: flex-start;
     }

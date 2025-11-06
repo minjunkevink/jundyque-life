@@ -43,22 +43,39 @@ layout: default
   .post-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0;
+    align-items: center;
     margin-top: 5px;
   }
   
   .post-tag {
-    padding: 4px 12px;
-    background: #f4f4f4;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: #555;
-    text-decoration: none;
-    transition: background-color 0.2s;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    display: inline !important;
+    transition: color 0.3s ease;
   }
   
-  .post-tag:hover {
-    background: #e0e0e0;
+  .post-tag:hover,
+  .post-tag:focus {
+    color: #005bb5 !important;
+    text-decoration: underline !important;
+    font-weight: 300 !important;
+    background: #ffffff !important;
+  }
+
+  .tag-separator {
+    color: #000000;
+    margin: 0 6px;
+    font-weight: 300;
   }
   
   .post-featured-image {
@@ -257,7 +274,8 @@ layout: default
       </div>
       <div class="post-tags">
         {% for tag in page.tags %}
-        <a href="/blog?tag={{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+          {% unless forloop.first %}<span class="tag-separator">|</span>{% endunless %}
+          <a href="/essay?tag={{ tag | slugify }}" class="post-tag">{{ tag }}</a>
         {% endfor %}
       </div>
     </div>

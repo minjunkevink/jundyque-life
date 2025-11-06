@@ -1,0 +1,156 @@
+---
+layout: default
+---
+
+<style>
+  .books-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .books-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .books-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .books-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .books-category {
+    margin-bottom: 0;
+  }
+
+  .books-category h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .books-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .books-item {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .books-item:last-child {
+    border-bottom: none;
+  }
+
+  .books-item-title {
+    font-weight: 500;
+    color: #222;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .books-item-author {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .books-item-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .books-container {
+      padding: 20px 15px;
+    }
+
+    .books-title {
+      font-size: 2rem;
+    }
+
+    .books-category h2 {
+      font-size: 1.3rem;
+    }
+
+    .books-list {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+</style>
+
+<div class="books-container">
+  <div class="books-header">
+    <h1 class="books-title">📖</h1>
+  </div>
+
+  <div class="books-list">
+    <div class="books-category">
+      <h2>to read</h2>
+      <ul class="books-items">
+        <li class="books-item">
+          <div class="books-item-title"> The Design of Everyday Things</div>
+          <div class="books-item-author">by Don Norman</div>
+        </li>
+        <li class="books-item">
+          <div class="books-item-title"> Clean Code</div>
+          <div class="books-item-author">by Robert C. Martin</div>
+        </li>
+        <li class="books-item">
+          <div class="books-item-title"> How to Build a Personal Website</div>
+          <div class="books-item-author">by John Doe</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="books-category">
+      <h2>reading</h2>
+      <ul class="books-items">
+        <li class="books-item">
+          <div class="books-item-title"> Atomic Habits</div>
+          <div class="books-item-author">by James Clear</div>
+        </li>
+        <li class="books-item">
+          <div class="books-item-title"> The Pragmatic Programmer</div>
+          <div class="books-item-author">by Andrew Hunt & David Thomas</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="books-category">
+      <h2>read</h2>
+      <ul class="books-items">
+        <li class="books-item">
+          <div class="books-item-title"> Sapiens</div>
+          <div class="books-item-author">by Yuval Noah Harari</div>
+        </li>
+        <li class="books-item">
+          <div class="books-item-title"> Deep Work</div>
+          <div class="books-item-author">by Cal Newport</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

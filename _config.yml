@@ -42,7 +42,7 @@ defaults:
       layout: "page"
       
 # Permalink structure for posts
-permalink: /blog/:year/:month/:day/:title/
+permalink: /essay/:year/:month/:day/:title/
       
 include:
   - "_markdown"
