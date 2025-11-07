@@ -11,7 +11,8 @@ url: "https://jundyque.life" # Your domain URL
 github_username: ""  # Add your GitHub username
 
 # Build settings
-theme: jekyll-theme-minimal 
+theme: jekyll-theme-minimal
+future: true 
 
 # Plugins
 plugins:
@@ -42,7 +43,7 @@ defaults:
       layout: "page"
       
 # Permalink structure for posts
-permalink: /essay/:year/:month/:day/:title/
+permalink: /essays/:year/:month/:day/:title/
       
 include:
   - "_markdown"

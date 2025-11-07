@@ -10,7 +10,13 @@ layout: default
 
   <div class="shower-thoughts-posts">
     {% for post in site.posts %}
-      {% if post.tags contains 'shower-thoughts' %}
+      {% assign has_shower_thought_tag = false %}
+      {% for tag in post.tags %}
+        {% if tag == 'shower-thoughts' %}
+          {% assign has_shower_thought_tag = true %}
+        {% endif %}
+      {% endfor %}
+      {% if has_shower_thought_tag %}
       <div class="post-card">
         {% if post.featured_image %}
         <div class="post-image">
