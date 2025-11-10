@@ -80,6 +80,27 @@ layout: default
     line-height: 1.5;
   }
 
+  .books-item-rating {
+    font-size: 0.9rem;
+    color: #f39c12;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+
+  .books-item-review-link {
+    font-size: 0.85rem;
+    color: #267CB9;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+
+  .books-item-review-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+  }
+
   @media (max-width: 768px) {
     .books-container {
       padding: 20px 15px;
@@ -110,16 +131,9 @@ layout: default
       <h2>to read</h2>
       <ul class="books-items">
         <li class="books-item">
-          <div class="books-item-title"> The Design of Everyday Things</div>
-          <div class="books-item-author">by Don Norman</div>
-        </li>
-        <li class="books-item">
-          <div class="books-item-title"> Clean Code</div>
-          <div class="books-item-author">by Robert C. Martin</div>
-        </li>
-        <li class="books-item">
-          <div class="books-item-title"> How to Build a Personal Website</div>
-          <div class="books-item-author">by John Doe</div>
+          <div class="books-item-title">thinking fast and slow</div>
+          <div class="books-item-author">by daniel kahneman</div>
+          <div class="books-item-description">recommended by dr. ivory hills during sit-down dinner at deerfield academy, 2023</div>
         </li>
       </ul>
     </div>
@@ -128,12 +142,13 @@ layout: default
       <h2>reading</h2>
       <ul class="books-items">
         <li class="books-item">
-          <div class="books-item-title"> Atomic Habits</div>
-          <div class="books-item-author">by James Clear</div>
+          <div class="books-item-title">the obstacle is teh way</div>
+          <div class="books-item-author">by ryan holiday</div>
         </li>
         <li class="books-item">
-          <div class="books-item-title"> The Pragmatic Programmer</div>
-          <div class="books-item-author">by Andrew Hunt & David Thomas</div>
+          <div class="books-item-title">great expectations</div>
+          <div class="books-item-author">by charles dickens</div>
+          <div class="books-item-description">as part of my penguin classics collection list</div>
         </li>
       </ul>
     </div>
@@ -142,12 +157,10 @@ layout: default
       <h2>read</h2>
       <ul class="books-items">
         <li class="books-item">
-          <div class="books-item-title"> Sapiens</div>
-          <div class="books-item-author">by Yuval Noah Harari</div>
-        </li>
-        <li class="books-item">
-          <div class="books-item-title"> Deep Work</div>
-          <div class="books-item-author">by Cal Newport</div>
+          <div class="books-item-title">stolen focus</div>
+          <div class="books-item-author">by johann hari</div>
+          <div class="books-item-rating">★★★☆☆</div>
+          <a href="/essays/2025/11/03/stolen-focus-review/" class="books-item-review-link">review →</a>
         </li>
       </ul>
     </div>
