@@ -3,4 +3,4 @@ layout: home
 title: "Home"
 permalink: /
 ---
-Check out my [academic website](https://minjunkevink.github.io/) for more.
+My academic website is [here](https://minjunkevink.github.io)

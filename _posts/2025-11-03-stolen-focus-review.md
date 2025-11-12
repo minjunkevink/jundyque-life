@@ -2,43 +2,23 @@
 layout: post
 title: "Stolen Focus - Book Review"
 date: 2025-11-03
-tags: [book-reviews, thoughts, life]
+tags: [book-reviews]
 featured_image:
 ---
 
 **Rating: ★★★☆☆**
 
-In "Stolen Focus: Why You Can't Pay Attention—and How to Think Deeply Again," Johann Hari delivers a compelling investigation into the modern attention crisis. This book resonated deeply with me as someone navigating the constant barrage of digital distractions in both academic and personal life.
+# TL;DR
 
-## The Core Argument
+I feel like you could honestly say the same thing he said in a 1500 word essay instead of a whole book.
 
-Hari argues that our inability to focus isn't a personal failing but a systemic problem. He identifies three main causes:
+# Key Takeaways
 
-1. **Speed**: We're constantly rushing, which prevents deep thinking
-2. **Switching**: Multitasking and constant task-switching fragment our attention
-3. **Surveillance Capitalism**: Tech companies deliberately design products to capture and monetize our attention
+### 1. It's okay to be bored.
+I haven't realized that compared to times when SFF (short form factor) content became widly public, I didn't constatnly try to squeeze in content at very possible dull moments throughout my day; waiting for the elevator, the professor setting up his lecture slides, waiting for my food to cook, etc. I want to try to decrease stimulation in my life overall. For example, I don't HAVE to be listening to music when I shower, nor do I need it when I run. I don't need to be watching a Youtube video if I'm tired: I could just lie down and rest a little.
 
-## What Struck Me Most
+### 2. Have a concious stream of thought.
+It is no understatement when I say my attention span is **cooked** from short form content. When I procrastinate from homework and watch some Youtube videos, procrasinate from **procrastinating** by pausing on the Youtube video to watch some Youtube Shorts. Or, I'll have a Netflix show playing on my computer while scrolling on Instagram Reels while calling my girlfriend. Yeah, I think it's about time I admit that this is just not okay. From now on I will be more weary of what I consume, and be picky on what I will be doing for the next however-long-hours.
 
-The most eye-opening section for me was Hari's exploration of how social media platforms are engineered to be addictive. The "variable rewards" system—where notifications arrive unpredictably—creates a dopamine-driven feedback loop that makes it nearly impossible to look away. This isn't accidental; it's by design.
-
-Hari also challenges the myth of multitasking. Research shows that what we call "multitasking" is actually rapid task-switching, which reduces productivity by up to 40% and increases errors. This hit home as I reflected on my own study habits.
-
-## Practical Takeaways
-
-While Hari doesn't offer quick fixes, he does provide actionable strategies:
-
-- **Deep Work Blocks**: Schedule uninterrupted time for focused work
-- **Phone-Free Zones**: Create physical spaces where devices aren't allowed
-- **Collective Action**: Recognize that individual solutions can only go so far—we need systemic change
-
-## The Bigger Picture
-
-What makes this book particularly powerful is Hari's recognition that focus is not just an individual problem but a societal one. He argues that a democracy requires citizens who can think deeply about complex issues, and our current attention economy undermines this capacity.
-
-## Final Thoughts
-
-"Stolen Focus" is essential reading for anyone who feels overwhelmed by modern life. It's not just about productivity; it's about reclaiming our ability to think deeply, connect meaningfully, and engage with the world in a more intentional way.
-
-The book left me with a renewed commitment to protect my attention and a better understanding of the forces working against it. Highly recommended.
-
+### 3. Non-Fiction is Overrated.
+I've read Atomic Habits, How to Win Friends and Influence People, 48 Laws of Power, Intelligent Investor, and much more. I simply don't think a non-fiction book captures the nuances as well as fiction does. I've start reading Great Expectations not to long ago, and the narration on the character and the emotions the character goes through simply let's you feel more present in the book's scene. I don't know, maybe it's just be but I think fiction books can deliver the same message as non-fictions in a more beutiful way.

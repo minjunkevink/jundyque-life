@@ -44,4 +44,8 @@ Lastly, and perhaps most importantly, I simply just want to try it out. All the 
 
 # Cars that I am Considering
 
-Let's get to the juicy part. I 
+Let's get to the juicy part. If I were to live in a car I would probably go electric given the fact that I'm in California. I saw a handful of Youtubers making videos of them living out of the Tesla Model Y. There is also the Rivian R2 which is set to come out in 2026 and has fully reclinable seats (even the driver's) for larger space. Of course, this has some safety concerns if you are sleping outside in a random street but since I would be sleeping on campus that would be fine. I've also thought about buying a midsize van like the KIA Carnival.
+
+# Conclusion
+
+Will I do it? Most likely not. I would love to, but I think I will gladly take stability and not waste my effort and time during such an important time (graduate school applications). Although, who knows? Maybe I'll follow through after I get accepted into a Ph.D. program!
