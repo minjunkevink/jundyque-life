@@ -2,7 +2,7 @@
 layout: post
 title: "Living in a Car`"
 date: 2025-11-03
-tags: [shower-thoughts]
+tags: [opinion]
 featured_image:
 ---
 Daydreaming about becoming a nomad.

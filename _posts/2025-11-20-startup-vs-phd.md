@@ -27,4 +27,4 @@ Brainstorming:
 
 - Is it possible to do both?
 - At the end of the day, you need to pursue what you beleiive in, a choice that you won't regret making no matter the outcome in the future.
-- If you have a go-getter mindset and remain constantly curious, you will succeed in any field. It's somewhat of an obvious statement but we tend to just let these things go by and are prone to seeking comfort on a daily basis.
+- If you have a go-getter mindset and remain constantly curious, you will succeed in any field. It's somewhat of an obvious statement but we tend to just let these things go by and are prone to seeking comfort on a daily basis

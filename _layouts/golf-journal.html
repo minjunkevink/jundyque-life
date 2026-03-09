@@ -1,20 +1,19 @@
 ---
 layout: default
 custom_tags:
-  - technology
-  - field-trips
-  - self-improvement
-  - opinion
-  - book-reviews
+  - range session
+  - theory
+  - roundings
+  - equipment
 ---
 
-<div class="essays-container">
-  <div class="essays-header">
-    <h1 class="essays-title">📝</h1>
-    <p class="essays-description">all opinions are my own</p>
+<div class="golf-journal-container">
+  <div class="golf-journal-header">
+    <h1 class="golf-journal-title">⛳</h1>
+    <p class="golf-journal-description">my golf journey, rounds, and thoughts</p>
   </div>
 
-  <div class="essays-filters">
+  <div class="golf-journal-filters">
     <div class="tag-filter">
       <div class="tags">
         <button class="tag-button active" data-tag="all">all</button>
@@ -26,31 +25,41 @@ custom_tags:
     </div>
   </div>
 
-  <div class="essays-posts">
+  <div class="golf-journal-posts">
     {% for post in site.posts %}
-      {% unless post.tags contains 'golf-journal' %}
+      {% assign has_golf_journal_tag = false %}
+      {% for tag in post.tags %}
+        {% if tag == 'golf-journal' %}
+          {% assign has_golf_journal_tag = true %}
+        {% endif %}
+      {% endfor %}
+      {% if has_golf_journal_tag %}
       <div class="post-card" data-tags="{% for tag in post.tags %}{{ tag }} {% endfor %}">
-      {% if post.featured_image %}
-      <div class="post-image">
-        <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+        {% if post.featured_image %}
+        <div class="post-image">
+          <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+        </div>
+        {% endif %}
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+            <span class="reading-time">{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+          </div>
+          <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <div class="post-tags">
+            {% assign first_tag = true %}
+            {% for tag in post.tags %}
+              {% unless tag == 'golf-journal' %}
+                {% unless first_tag %}<span class="tag-separator">|</span>{% endunless %}
+                <span class="tag">{{ tag }}</span>
+                {% assign first_tag = false %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
       {% endif %}
-      <div class="post-content">
-        <div class="post-meta">
-          <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-          <span class="reading-time">{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
-        </div>
-        <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <div class="post-tags">
-          {% for tag in post.tags %}
-            {% unless forloop.first %}<span class="tag-separator">|</span>{% endunless %}
-            <span class="tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-      {% endunless %}
     {% endfor %}
   </div>
 
@@ -61,13 +70,12 @@ custom_tags:
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const tagButtons = document.querySelectorAll('.tag-button');
-    const posts = document.querySelectorAll('.post-card');
-    const noResults = document.querySelector('.no-results');
+    const tagButtons = document.querySelectorAll('.golf-journal-container .tag-button');
+    const posts = document.querySelectorAll('.golf-journal-container .post-card');
+    const noResults = document.querySelector('.golf-journal-container .no-results');
     
     let activeTag = 'all';
 
-    // Filter posts by tag
     function filterPosts() {
       let visibleCount = 0;
       
@@ -86,7 +94,6 @@ custom_tags:
       noResults.style.display = visibleCount === 0 ? 'block' : 'none';
     }
     
-    // Tag filter
     tagButtons.forEach(button => {
       button.addEventListener('click', function() {
         tagButtons.forEach(btn => btn.classList.remove('active'));
@@ -99,31 +106,31 @@ custom_tags:
 </script>
 
 <style>
-  .essays-container {
+  .golf-journal-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  .essays-header {
+  .golf-journal-header {
     text-align: center;
     margin-bottom: 40px;
   }
 
-  .essays-title {
+  .golf-journal-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #333;
   }
 
-  .essays-description {
+  .golf-journal-description {
     color: #666;
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
   }
 
-  .essays-filters {
+  .golf-journal-filters {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -133,14 +140,14 @@ custom_tags:
     border-bottom: 1px solid #eee;
   }
 
-  .tag-filter {
+  .golf-journal-container .tag-filter {
     margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .tags {
+  .golf-journal-container .tags {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -148,13 +155,13 @@ custom_tags:
     align-items: center;
   }
 
-  .tag-separator {
+  .golf-journal-container .tag-separator {
     color: #000000;
     margin: 0 6px;
     font-weight: 300;
   }
 
-  .tag-button {
+  .golf-journal-container .tag-button {
     font-size: 0.8rem !important;
     text-decoration: none !important;
     color: #000000 !important;
@@ -175,22 +182,44 @@ custom_tags:
     appearance: none !important;
   }
 
-  .tag-button:hover,
-  .tag-button:focus {
+  .golf-journal-container .tag-button:hover,
+  .golf-journal-container .tag-button:focus {
     color: #005bb5 !important;
     text-decoration: underline !important;
     font-weight: 300 !important;
     background: #ffffff !important;
   }
 
-  .tag-button.active {
+  .golf-journal-container .tag-button.active {
     color: #005bb5 !important;
     text-decoration: underline !important;
     font-weight: 300 !important;
     background: #ffffff !important;
   }
 
-  .essays-posts {
+  .golf-journal-container .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+  }
+
+  .golf-journal-container .post-tags .tag {
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    display: inline !important;
+  }
+
+  .golf-journal-posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 25px;
@@ -266,28 +295,6 @@ custom_tags:
     flex-grow: 1;
   }
 
-  .post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    align-items: center;
-  }
-
-  .tag {
-    font-size: 0.8rem !important;
-    text-decoration: none !important;
-    color: #000000 !important;
-    font-weight: 300 !important;
-    padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    display: inline !important;
-  }
-
   .no-results {
     text-align: center;
     padding: 30px;
@@ -297,14 +304,13 @@ custom_tags:
   }
 
   @media (max-width: 768px) {
-    .essays-posts {
+    .golf-journal-posts {
       grid-template-columns: 1fr;
     }
     
-    .essays-filters {
+    .golf-journal-filters {
       flex-direction: column;
       align-items: flex-start;
     }
   }
 </style>
-
