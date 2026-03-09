@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Ph.D. vs. Startups: Choosing Your Career"
+date: 2025-11-03
+tags: [opinion]
+featured_image:
+---
+
+
+First, I want to make a clear distinction. It is commonly precieved that students (especially international ones) reluctantly choose to pursue higher-level education due to the job market. My decision was solidified purely on my passion and was chosen early on in my life before my perspective matured to face the realities of capitalism and meritocracy. Also, as a student who chose to go down the research path, the closest experience I have of anything remotely close to a corporate setting is from my friends talking about job applications. My philosohpy is as follows: I believe that you should really think about what you are passionate about and pursue what you think is worth learning to live a meaningful life. Everyday, you should wake up with curiosity and take your time to digest the information you consume. One should take full advantage of the opportunities provided at any academic institution one belongs to, and absorb as much information as they can during their stay. However, I acknowledge that this is not a common perspective, as people are driven by external factors that prompt them to use acadmeic institutions as a means to an end. What I observe, at least amongst USC undergraduates, leads me to draw some nuanced conclusions:
+
+1. Students who are most labored by the hiring process (in swe/tech) are those who chose this major becuase they think the job pays a lot.
+2. Even if that is the case, it is actually (relatively) not that hard to get a job if you are truly desperate for it.
+A a school like USC, there are so many industry connection events, resume opportunities, and networking opportunities. Going to any CS class *is* a netowrking opportunity. Just from the friends I know, most of them have return offers from FAANG companies. And some of them are definitely not the sharpest tool in the shed. It shouldn't take more than a week to secure at least one referral from someone on campus. But in reality, there are many students who not that desperate to get a job. As their initial passion to get through the 4 years (a means to an end), slwoly waned and now every single day is a burden for them. Getting a job is secondary, as they are too depressed and pressured by all the things they don't want to do.
+3. I have never seen anyone truly passionate about developing software.
+I mean seriously, do people really glorify being paged at 3am and having (basically) 7 day weeks? If they are so passionate about debugging and developing software that they will wake up at anytime and be okay with, sure. But nothing in the world is free, and there is a reason why you're getting a high salary.
+
+I just don't see myself growing old and telling my grandkids about the glorious days when I used to lose hair over code that I don't care about, getting paged at 3am, and staring at millions of lines of code just to make a random API call half a second faster. I want to tell them about a vision I had, a knowledge I wanted to obtain and master, and pursuing that vision until the very end, regardless of success of failure. That is preciscely why research was such a glamorous in my high school eyes. No corporate constraints, no limitations on things you can explore, just you and your problem until you come to the conclusion that it works/doesn't work.
+
+But recently, I came across people who share the exact same mentality, but are in a slightly different settings: yes, they are founders. Specifically, SF-based founders. Some inital sterotypes about these founders I have are that they are these, hipster, college dropouts that are really good at storytelling and are insanely good at networking. In good terms, they are really exceptional problem pinpointers. In bad terms, they are master bullshitters. It is insane the amount of ChatGPT wrapper projects I've seen in Y-Combinator. Most of the projects could be made within a weekend with a friend if you really tried. They are LinkedIn and X warriors who somehow always find time to be chronically online while also running an entire company. One small event that happens in your life, and you just have to post it online for everyone to see. It very much so like they don't do much, but do so much at the same time.
+
+At first, this is what I thought. But there are several things I came to realize. The most important being that you don't need an extremely novel ideas to make a company. Drawing parallels to research, my PI Erdem loves to call some of our projects "low hanging fruits": papers that show marginal improvement in novelty, are engineering heavy, and have little algorithmic contribution. But these publications are a must. You can't just sit there as a student and not publish anything for a whole year. Same with startups; even though you might not bring the most ground breaking technology to consumers, if you are very good at a niche aspect of the whole chain, you are still brining value to the world, no matter the magnitude. Hence, I come to realize that me looking down at founders for having comapnies that have little novelty would be the same thing as discrediting a researcher for publishing a "low hanging fruit" paper. As most founders in SF are go-getters and college dropouts, their current company might merely be a stepping stone, a journey to finding a better company in the future. 
+
+Following the same line of thought, I also realized that VCs do not invest in the product. They invest in the people.
+
+Brainstorming:
+
+- Is it possible to do both?
+- At the end of the day, you need to pursue what you beleiive in, a choice that you won't regret making no matter the outcome in the future.
+- If you have a go-getter mindset and remain constantly curious, you will succeed in any field. It's somewhat of an obvious statement but we tend to just let these things go by and are prone to seeking comfort on a daily basis.

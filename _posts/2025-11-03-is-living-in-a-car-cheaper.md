@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Living in a Car"
+title: "Living in a Car`"
 date: 2025-11-03
 tags: [shower-thoughts]
 featured_image:
